@@ -125,7 +125,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="NOME" id="JUK-mB-ivY">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="M64-uM-4XY"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="M64-uM-4XY">
+                            <connections>
+                                <segue destination="Ej6-5t-Ifc" kind="show" identifier="segueAdicionar" id="JRq-uX-tVP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tfEspecie" destination="lLI-kP-w5D" id="ml1-8p-8df"/>
@@ -171,6 +175,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0h-0y-kIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1836" y="304.5"/>
+        </scene>
+        <!--Adicionar-->
+        <scene sceneID="0zK-g6-xur">
+            <objects>
+                <viewController id="Ej6-5t-Ifc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wi3-il-0Mf"/>
+                        <viewControllerLayoutGuide type="bottom" id="f5O-Tl-wPZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g1T-nA-oZg">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adicionar" id="9ka-EV-msL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wzq-3z-WMq"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Te3-P0-Dci"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wfe-3c-7Ic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2584.5" y="304.5"/>
         </scene>
         <!--Selecione uma família-->
         <scene sceneID="SG9-eg-T8q">
