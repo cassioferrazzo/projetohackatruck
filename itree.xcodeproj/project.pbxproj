@@ -13,12 +13,19 @@
 		3F3F12F11D99A7160060A291 /* itree.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F12EF1D99A7160060A291 /* itree.xcdatamodeld */; };
 		3F3F12F31D99A7160060A291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3F12F21D99A7160060A291 /* Assets.xcassets */; };
 		3F3F12F61D99A7160060A291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3F12F41D99A7160060A291 /* LaunchScreen.storyboard */; };
-		3F3F12FE1D99AAD20060A291 /* FormaVida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F12FD1D99AAD20060A291 /* FormaVida.swift */; };
-		3F3F13001D99AB890060A291 /* Familia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F12FF1D99AB890060A291 /* Familia.swift */; };
-		3F3F13021D99AC170060A291 /* Especie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F13011D99AC170060A291 /* Especie.swift */; };
-		3F3F13041D99ADD30060A291 /* Foto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F13031D99ADD30060A291 /* Foto.swift */; };
-		3F3F13061D99AEB70060A291 /* Localizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F13051D99AEB70060A291 /* Localizacao.swift */; };
-		3F3F13081D99AFAA0060A291 /* Planta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F13071D99AFAA0060A291 /* Planta.swift */; };
+		3F4F64F41D9AFB5B0090AF9A /* Foto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64E81D9AFB5B0090AF9A /* Foto+CoreDataProperties.swift */; };
+		3F4F64F51D9AFB5B0090AF9A /* Foto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64E91D9AFB5B0090AF9A /* Foto.swift */; };
+		3F4F64F61D9AFB5B0090AF9A /* Localizacao+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64EA1D9AFB5B0090AF9A /* Localizacao+CoreDataProperties.swift */; };
+		3F4F64F71D9AFB5B0090AF9A /* Localizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64EB1D9AFB5B0090AF9A /* Localizacao.swift */; };
+		3F4F64F81D9AFB5B0090AF9A /* Planta+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64EC1D9AFB5B0090AF9A /* Planta+CoreDataProperties.swift */; };
+		3F4F64F91D9AFB5B0090AF9A /* Planta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64ED1D9AFB5B0090AF9A /* Planta.swift */; };
+		3F4F64FA1D9AFB5B0090AF9A /* Especie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64EE1D9AFB5B0090AF9A /* Especie+CoreDataProperties.swift */; };
+		3F4F64FB1D9AFB5B0090AF9A /* Especie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64EF1D9AFB5B0090AF9A /* Especie.swift */; };
+		3F4F64FC1D9AFB5B0090AF9A /* Familia+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64F01D9AFB5B0090AF9A /* Familia+CoreDataProperties.swift */; };
+		3F4F64FD1D9AFB5B0090AF9A /* Familia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64F11D9AFB5B0090AF9A /* Familia.swift */; };
+		3F4F64FE1D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64F21D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift */; };
+		3F4F64FF1D9AFB5B0090AF9A /* FormaVida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64F31D9AFB5B0090AF9A /* FormaVida.swift */; };
+		3F4F65011D9AFFE80090AF9A /* FormaVidaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F65001D9AFFE80090AF9A /* FormaVidaDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +37,19 @@
 		3F3F12F21D99A7160060A291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F3F12F51D99A7160060A291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3F12F71D99A7160060A291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F3F12FD1D99AAD20060A291 /* FormaVida.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormaVida.swift; sourceTree = "<group>"; };
-		3F3F12FF1D99AB890060A291 /* Familia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Familia.swift; sourceTree = "<group>"; };
-		3F3F13011D99AC170060A291 /* Especie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Especie.swift; sourceTree = "<group>"; };
-		3F3F13031D99ADD30060A291 /* Foto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foto.swift; sourceTree = "<group>"; };
-		3F3F13051D99AEB70060A291 /* Localizacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizacao.swift; sourceTree = "<group>"; };
-		3F3F13071D99AFAA0060A291 /* Planta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planta.swift; sourceTree = "<group>"; };
+		3F4F64E81D9AFB5B0090AF9A /* Foto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F4F64E91D9AFB5B0090AF9A /* Foto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foto.swift; sourceTree = "<group>"; };
+		3F4F64EA1D9AFB5B0090AF9A /* Localizacao+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Localizacao+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F4F64EB1D9AFB5B0090AF9A /* Localizacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizacao.swift; sourceTree = "<group>"; };
+		3F4F64EC1D9AFB5B0090AF9A /* Planta+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Planta+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F4F64ED1D9AFB5B0090AF9A /* Planta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planta.swift; sourceTree = "<group>"; };
+		3F4F64EE1D9AFB5B0090AF9A /* Especie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Especie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F4F64EF1D9AFB5B0090AF9A /* Especie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Especie.swift; sourceTree = "<group>"; };
+		3F4F64F01D9AFB5B0090AF9A /* Familia+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Familia+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F4F64F11D9AFB5B0090AF9A /* Familia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Familia.swift; sourceTree = "<group>"; };
+		3F4F64F21D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FormaVida+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F4F64F31D9AFB5B0090AF9A /* FormaVida.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormaVida.swift; sourceTree = "<group>"; };
+		3F4F65001D9AFFE80090AF9A /* FormaVidaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormaVidaDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +122,7 @@
 		3F3F130C1D99B2690060A291 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				3F4F65001D9AFFE80090AF9A /* FormaVidaDAO.swift */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -115,12 +130,18 @@
 		3F3F130D1D99B2860060A291 /* ENTITIES */ = {
 			isa = PBXGroup;
 			children = (
-				3F3F13071D99AFAA0060A291 /* Planta.swift */,
-				3F3F13051D99AEB70060A291 /* Localizacao.swift */,
-				3F3F13031D99ADD30060A291 /* Foto.swift */,
-				3F3F13011D99AC170060A291 /* Especie.swift */,
-				3F3F12FF1D99AB890060A291 /* Familia.swift */,
-				3F3F12FD1D99AAD20060A291 /* FormaVida.swift */,
+				3F4F64E81D9AFB5B0090AF9A /* Foto+CoreDataProperties.swift */,
+				3F4F64E91D9AFB5B0090AF9A /* Foto.swift */,
+				3F4F64EA1D9AFB5B0090AF9A /* Localizacao+CoreDataProperties.swift */,
+				3F4F64EB1D9AFB5B0090AF9A /* Localizacao.swift */,
+				3F4F64EC1D9AFB5B0090AF9A /* Planta+CoreDataProperties.swift */,
+				3F4F64ED1D9AFB5B0090AF9A /* Planta.swift */,
+				3F4F64EE1D9AFB5B0090AF9A /* Especie+CoreDataProperties.swift */,
+				3F4F64EF1D9AFB5B0090AF9A /* Especie.swift */,
+				3F4F64F01D9AFB5B0090AF9A /* Familia+CoreDataProperties.swift */,
+				3F4F64F11D9AFB5B0090AF9A /* Familia.swift */,
+				3F4F64F21D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift */,
+				3F4F64F31D9AFB5B0090AF9A /* FormaVida.swift */,
 			);
 			name = ENTITIES;
 			sourceTree = "<group>";
@@ -196,15 +217,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4F64FF1D9AFB5B0090AF9A /* FormaVida.swift in Sources */,
+				3F4F64F61D9AFB5B0090AF9A /* Localizacao+CoreDataProperties.swift in Sources */,
+				3F4F64F71D9AFB5B0090AF9A /* Localizacao.swift in Sources */,
+				3F4F64FC1D9AFB5B0090AF9A /* Familia+CoreDataProperties.swift in Sources */,
+				3F4F64F91D9AFB5B0090AF9A /* Planta.swift in Sources */,
 				3F3F12EB1D99A7160060A291 /* ViewController.swift in Sources */,
 				3F3F12F11D99A7160060A291 /* itree.xcdatamodeld in Sources */,
-				3F3F13081D99AFAA0060A291 /* Planta.swift in Sources */,
+				3F4F64F51D9AFB5B0090AF9A /* Foto.swift in Sources */,
+				3F4F64FB1D9AFB5B0090AF9A /* Especie.swift in Sources */,
+				3F4F64FA1D9AFB5B0090AF9A /* Especie+CoreDataProperties.swift in Sources */,
+				3F4F65011D9AFFE80090AF9A /* FormaVidaDAO.swift in Sources */,
+				3F4F64F81D9AFB5B0090AF9A /* Planta+CoreDataProperties.swift in Sources */,
 				3F3F12E91D99A7160060A291 /* AppDelegate.swift in Sources */,
-				3F3F13001D99AB890060A291 /* Familia.swift in Sources */,
-				3F3F13041D99ADD30060A291 /* Foto.swift in Sources */,
-				3F3F13021D99AC170060A291 /* Especie.swift in Sources */,
-				3F3F13061D99AEB70060A291 /* Localizacao.swift in Sources */,
-				3F3F12FE1D99AAD20060A291 /* FormaVida.swift in Sources */,
+				3F4F64FD1D9AFB5B0090AF9A /* Familia.swift in Sources */,
+				3F4F64F41D9AFB5B0090AF9A /* Foto+CoreDataProperties.swift in Sources */,
+				3F4F64FE1D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +384,7 @@
 				3F3F12FC1D99A7160060A291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

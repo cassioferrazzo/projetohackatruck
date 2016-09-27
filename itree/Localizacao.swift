@@ -2,19 +2,16 @@
 //  Localizacao.swift
 //  itree
 //
-//  Created by Student on 9/26/16.
+//  Created by Student on 9/27/16.
 //  Copyright © 2016 biotruck. All rights reserved.
 //
 
 import Foundation
+import CoreData
 
-class Localizacao {
 
-    let latitude: Double
-    let longitude: Double
-    
-    init (latitude: Double, longitude: Double){
-        self.latitude = latitude
-        self.longitude = longitude
-    }
+class Localizacao: NSManagedObject {
+
+// Insert code here to add functionality to your managed object subclass
+
 }

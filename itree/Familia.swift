@@ -2,19 +2,16 @@
 //  Familia.swift
 //  itree
 //
-//  Created by Student on 9/26/16.
+//  Created by Student on 9/27/16.
 //  Copyright © 2016 biotruck. All rights reserved.
 //
 
 import Foundation
+import CoreData
 
-class Familia {
-    
-    let nome: String
-    let formaVida : FormaVida
-    
-    init(nome: String, formaVida: FormaVida){
-        self.nome = nome
-        self.formaVida = formaVida
-    }
+
+class Familia: NSManagedObject {
+
+// Insert code here to add functionality to your managed object subclass
+
 }
