@@ -26,6 +26,11 @@
 		3F4F64FE1D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64F21D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift */; };
 		3F4F64FF1D9AFB5B0090AF9A /* FormaVida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64F31D9AFB5B0090AF9A /* FormaVida.swift */; };
 		3F4F65011D9AFFE80090AF9A /* FormaVidaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F65001D9AFFE80090AF9A /* FormaVidaDAO.swift */; };
+		3FB374B31D9C30F3005D73C7 /* FamiliaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB374B21D9C30F3005D73C7 /* FamiliaDAO.swift */; };
+		3FB374B51D9C3359005D73C7 /* EspecieDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB374B41D9C3359005D73C7 /* EspecieDAO.swift */; };
+		3FB374B71D9C3433005D73C7 /* LocalizacaoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB374B61D9C3433005D73C7 /* LocalizacaoDAO.swift */; };
+		3FB374B91D9C3542005D73C7 /* FotoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB374B81D9C3542005D73C7 /* FotoDAO.swift */; };
+		3FB374BB1D9C3627005D73C7 /* PlantaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB374BA1D9C3627005D73C7 /* PlantaDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		3F4F64F21D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FormaVida+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F4F64F31D9AFB5B0090AF9A /* FormaVida.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormaVida.swift; sourceTree = "<group>"; };
 		3F4F65001D9AFFE80090AF9A /* FormaVidaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormaVidaDAO.swift; sourceTree = "<group>"; };
+		3FB374B21D9C30F3005D73C7 /* FamiliaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamiliaDAO.swift; sourceTree = "<group>"; };
+		3FB374B41D9C3359005D73C7 /* EspecieDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EspecieDAO.swift; sourceTree = "<group>"; };
+		3FB374B61D9C3433005D73C7 /* LocalizacaoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizacaoDAO.swift; sourceTree = "<group>"; };
+		3FB374B81D9C3542005D73C7 /* FotoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotoDAO.swift; sourceTree = "<group>"; };
+		3FB374BA1D9C3627005D73C7 /* PlantaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantaDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,11 @@
 			isa = PBXGroup;
 			children = (
 				3F4F65001D9AFFE80090AF9A /* FormaVidaDAO.swift */,
+				3FB374B21D9C30F3005D73C7 /* FamiliaDAO.swift */,
+				3FB374B41D9C3359005D73C7 /* EspecieDAO.swift */,
+				3FB374B61D9C3433005D73C7 /* LocalizacaoDAO.swift */,
+				3FB374B81D9C3542005D73C7 /* FotoDAO.swift */,
+				3FB374BA1D9C3627005D73C7 /* PlantaDAO.swift */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -218,19 +233,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4F64FF1D9AFB5B0090AF9A /* FormaVida.swift in Sources */,
+				3FB374B51D9C3359005D73C7 /* EspecieDAO.swift in Sources */,
 				3F4F64F61D9AFB5B0090AF9A /* Localizacao+CoreDataProperties.swift in Sources */,
 				3F4F64F71D9AFB5B0090AF9A /* Localizacao.swift in Sources */,
 				3F4F64FC1D9AFB5B0090AF9A /* Familia+CoreDataProperties.swift in Sources */,
 				3F4F64F91D9AFB5B0090AF9A /* Planta.swift in Sources */,
+				3FB374B71D9C3433005D73C7 /* LocalizacaoDAO.swift in Sources */,
 				3F3F12EB1D99A7160060A291 /* ViewController.swift in Sources */,
 				3F3F12F11D99A7160060A291 /* itree.xcdatamodeld in Sources */,
 				3F4F64F51D9AFB5B0090AF9A /* Foto.swift in Sources */,
 				3F4F64FB1D9AFB5B0090AF9A /* Especie.swift in Sources */,
 				3F4F64FA1D9AFB5B0090AF9A /* Especie+CoreDataProperties.swift in Sources */,
 				3F4F65011D9AFFE80090AF9A /* FormaVidaDAO.swift in Sources */,
+				3FB374B31D9C30F3005D73C7 /* FamiliaDAO.swift in Sources */,
 				3F4F64F81D9AFB5B0090AF9A /* Planta+CoreDataProperties.swift in Sources */,
 				3F3F12E91D99A7160060A291 /* AppDelegate.swift in Sources */,
+				3FB374B91D9C3542005D73C7 /* FotoDAO.swift in Sources */,
 				3F4F64FD1D9AFB5B0090AF9A /* Familia.swift in Sources */,
+				3FB374BB1D9C3627005D73C7 /* PlantaDAO.swift in Sources */,
 				3F4F64F41D9AFB5B0090AF9A /* Foto+CoreDataProperties.swift in Sources */,
 				3F4F64FE1D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift in Sources */,
 			);
