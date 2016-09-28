@@ -8,6 +8,17 @@
 
 import UIKit
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var tfNomePopular: UITextField!
@@ -15,12 +26,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfFamilia: UITextField!
     @IBOutlet weak var tfFormaDeVida: UITextField!
     
-    static var formaDeVidaNome: String?
-    static var familiaNome: String?
-    static var especieNome: String?
+    static var formaDeVida: FormaVida?
+    static var familia: Familia?
+    static var especie: Especie?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround() 
       
     }
 
@@ -48,14 +60,14 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        if let familia = ViewController.familiaNome {
-            tfFamilia.text = familia
+        if let familia = ViewController.familia {
+            tfFamilia.text = familia.nome
         }
-        if let formaVida = ViewController.formaDeVidaNome {
-            tfFormaDeVida.text = formaVida
+        if let formaVida = ViewController.formaDeVida {
+            tfFormaDeVida.text = formaVida.nome
         }
-        if let especie = ViewController.especieNome {
-            tfEspecie.text = especie
+        if let especie = ViewController.especie {
+            tfEspecie.text = especie.nome
         }
     }
 }

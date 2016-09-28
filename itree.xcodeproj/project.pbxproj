@@ -22,6 +22,7 @@
 		3F4244351D9AF6B700EB4B67 /* SelectFormaDeVidaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4244341D9AF6B700EB4B67 /* SelectFormaDeVidaTableViewController.swift */; };
 		3F4244371D9AFC9900EB4B67 /* SelectFamiliaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4244361D9AFC9900EB4B67 /* SelectFamiliaTableViewController.swift */; };
 		3F4244391D9AFCA800EB4B67 /* SelecEspecieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4244381D9AFCA800EB4B67 /* SelecEspecieTableViewController.swift */; };
+		3F78B7361D9C408D008D0283 /* AddEspecieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78B7351D9C408D008D0283 /* AddEspecieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		3F4244341D9AF6B700EB4B67 /* SelectFormaDeVidaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectFormaDeVidaTableViewController.swift; sourceTree = "<group>"; };
 		3F4244361D9AFC9900EB4B67 /* SelectFamiliaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectFamiliaTableViewController.swift; sourceTree = "<group>"; };
 		3F4244381D9AFCA800EB4B67 /* SelecEspecieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelecEspecieTableViewController.swift; sourceTree = "<group>"; };
+		3F78B7351D9C408D008D0283 /* AddEspecieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEspecieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		3F3F130B1D99B1F50060A291 /* CONTROLLER */ = {
 			isa = PBXGroup;
 			children = (
+				3F78B7351D9C408D008D0283 /* AddEspecieViewController.swift */,
 				3F3F12EA1D99A7160060A291 /* ViewController.swift */,
 				3F4244361D9AFC9900EB4B67 /* SelectFamiliaTableViewController.swift */,
 				3F4244381D9AFCA800EB4B67 /* SelecEspecieTableViewController.swift */,
@@ -166,6 +169,7 @@
 				TargetAttributes = {
 					3F3F12E41D99A7160060A291 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7T7U4FAQU6;
 					};
 				};
 			};
@@ -214,6 +218,7 @@
 				3F3F12E91D99A7160060A291 /* AppDelegate.swift in Sources */,
 				3F3F13001D99AB890060A291 /* Familia.swift in Sources */,
 				3F3F13041D99ADD30060A291 /* Foto.swift in Sources */,
+				3F78B7361D9C408D008D0283 /* AddEspecieViewController.swift in Sources */,
 				3F3F13021D99AC170060A291 /* Especie.swift in Sources */,
 				3F3F13061D99AEB70060A291 /* Localizacao.swift in Sources */,
 				3F3F12FE1D99AAD20060A291 /* FormaVida.swift in Sources */,
@@ -331,10 +336,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = itree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.org.cassiof.itree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -342,10 +350,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = itree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.org.cassiof.itree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

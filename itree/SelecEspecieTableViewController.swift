@@ -11,9 +11,13 @@ import UIKit
 class SelectEspecieTableViewController: UITableViewController {
 
     var familia : Familia?
+    var possivelAdicionar: Bool = false
+    
+    @IBOutlet weak var btnAdicionar: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //self.btnAdicionar.enabled = self.possivelAdicionar
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

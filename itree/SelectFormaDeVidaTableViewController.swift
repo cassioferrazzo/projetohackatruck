@@ -38,7 +38,7 @@ class SelectFormaDeVidaTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        ViewController.formaDeVidaNome = "DEMONIO"
+        ViewController.formaDeVida = FormaVida(nome: "DEMONIO", descricao: "")
         self.navigationController?.popViewControllerAnimated(true)
     }
 

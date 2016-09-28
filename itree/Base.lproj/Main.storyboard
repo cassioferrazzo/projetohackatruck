@@ -21,7 +21,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oiP-1q-cwZ">
                                 <rect key="frame" x="20" y="358" width="560" height="204"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="678-xs-ieR">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="678-xs-ieR">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="144"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-Yn-8Cs">
@@ -29,14 +29,14 @@
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Forma de vida" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aoa-00-Eqd">
                                                         <rect key="frame" x="0.0" y="0.0" width="522" height="30"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olR-sn-yjk">
                                                         <rect key="frame" x="530" y="0.0" width="30" height="30"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="30" id="l5R-xI-bs0"/>
-                                                            <constraint firstAttribute="height" constant="30" id="pvp-oA-pbn"/>
+                                                            <constraint firstAttribute="width" constant="40" id="l5R-xI-bs0"/>
+                                                            <constraint firstAttribute="height" constant="40" id="pvp-oA-pbn"/>
                                                         </constraints>
                                                         <state key="normal" title="Lupa"/>
                                                         <connections>
@@ -50,14 +50,14 @@
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Família" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t01-qV-x7n">
                                                         <rect key="frame" x="0.0" y="0.0" width="522" height="30"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoz-1J-1js">
                                                         <rect key="frame" x="530" y="0.0" width="30" height="30"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="30" id="C2R-hv-N6H"/>
-                                                            <constraint firstAttribute="height" constant="30" id="YlE-bo-PLW"/>
+                                                            <constraint firstAttribute="width" constant="40" id="C2R-hv-N6H"/>
+                                                            <constraint firstAttribute="height" constant="40" id="YlE-bo-PLW"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
@@ -71,14 +71,14 @@
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Espécie" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lLI-kP-w5D">
                                                         <rect key="frame" x="0.0" y="0.0" width="522" height="30"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iV-i8-l0d">
                                                         <rect key="frame" x="530" y="0.0" width="30" height="30"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="6vj-yu-K6C"/>
-                                                            <constraint firstAttribute="width" constant="30" id="aIf-Ni-hfH"/>
+                                                            <constraint firstAttribute="height" constant="40" id="6vj-yu-K6C"/>
+                                                            <constraint firstAttribute="width" constant="40" id="aIf-Ni-hfH"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
@@ -89,17 +89,30 @@
                                             </stackView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome popular" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-M6-DBx">
                                                 <rect key="frame" x="0.0" y="114" width="560" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5F-AX-fqP">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5F-AX-fqP">
                                         <rect key="frame" x="0.0" y="174" width="560" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Gua-Z4-7eJ"/>
+                                        </constraints>
                                         <state key="normal" title="Buscar">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Gua-Z4-7eJ"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Gua-Z4-7eJ"/>
+                                            </mask>
+                                        </variation>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -122,7 +135,19 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oiP-1q-cwZ" secondAttribute="bottom" constant="8" id="18a-dM-god"/>
                             <constraint firstItem="oiP-1q-cwZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="G1x-Tu-Cmu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oiP-1q-cwZ" secondAttribute="trailing" id="egw-5c-lkb"/>
+                            <constraint firstItem="oiP-1q-cwZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="xkU-mP-Rrk"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xkU-mP-Rrk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="xkU-mP-Rrk"/>
+                                <exclude reference="18a-dM-god"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="NOME" id="JUK-mB-ivY">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="M64-uM-4XY">
@@ -190,8 +215,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Adicionar" id="9ka-EV-msL">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wzq-3z-WMq"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Te3-P0-Dci"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kLy-KJ-Ejy"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Te3-P0-Dci"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wfe-3c-7Ic" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -260,11 +285,161 @@
                             <outlet property="delegate" destination="MKx-Jf-ehq" id="qrC-wA-Mcf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Selecione uma espécie" id="DNF-Vf-mC4"/>
+                    <navigationItem key="navigationItem" title="Selecione uma espécie" id="DNF-Vf-mC4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5Ry-6d-aaW">
+                            <connections>
+                                <segue destination="892-uw-JWs" kind="show" identifier="segueAdicionarEspecie" id="LRe-2o-ncL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnAdicionar" destination="5Ry-6d-aaW" id="vHM-MB-iVI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l3c-l8-0OP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1815" y="1597.5"/>
+        </scene>
+        <!--Adicionar espécie-->
+        <scene sceneID="Vuq-Uq-ce2">
+            <objects>
+                <viewController id="892-uw-JWs" customClass="AddEspecieViewController" customModule="itree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iiF-eU-4hg"/>
+                        <viewControllerLayoutGuide type="bottom" id="gSZ-lO-Zpf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QcP-lT-G19">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="f3R-ON-IqH">
+                                <rect key="frame" x="0.0" y="0.0" width="560" height="144"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EWE-lv-oJR">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Forma de vida" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8t0-F2-pST">
+                                                <rect key="frame" x="0.0" y="0.0" width="522" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5f-PL-ZFm">
+                                                <rect key="frame" x="530" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="aa3-WW-AR4"/>
+                                                    <constraint firstAttribute="height" constant="40" id="vWI-25-QSK"/>
+                                                </constraints>
+                                                <state key="normal" title="Lupa"/>
+                                                <connections>
+                                                    <segue destination="trc-Rj-BbL" kind="show" identifier="segueSelectFormaVida" id="DXh-K9-DTt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Lgt-uX-1Gp">
+                                        <rect key="frame" x="0.0" y="38" width="560" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Família" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUH-dI-x8f">
+                                                <rect key="frame" x="0.0" y="0.0" width="522" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0T-8W-5c3">
+                                                <rect key="frame" x="530" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="6pi-Ym-csM"/>
+                                                    <constraint firstAttribute="height" constant="40" id="e02-xx-edP"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="QPi-e3-lVb" kind="show" identifier="segueSelectFamilia" id="Dv1-pp-CxL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome espécie" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v1C-Ec-yid">
+                                        <rect key="frame" x="0.0" y="0.0" width="522" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome autor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhQ-iJ-Oq3">
+                                        <rect key="frame" x="0.0" y="0.0" width="522" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome popular" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U6T-EZ-Mfe">
+                                        <rect key="frame" x="0.0" y="114" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome popular secundário" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLN-QM-gaQ">
+                                        <rect key="frame" x="0.0" y="114" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="v1C-Ec-yid"/>
+                                        <exclude reference="lhQ-iJ-Oq3"/>
+                                        <exclude reference="FLN-QM-gaQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="v1C-Ec-yid"/>
+                                        <include reference="lhQ-iJ-Oq3"/>
+                                        <include reference="FLN-QM-gaQ"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="f3R-ON-IqH" secondAttribute="trailing" id="qFn-v1-RRr"/>
+                            <constraint firstItem="f3R-ON-IqH" firstAttribute="leading" secondItem="QcP-lT-G19" secondAttribute="leadingMargin" id="rkQ-9I-XKd"/>
+                            <constraint firstItem="f3R-ON-IqH" firstAttribute="top" secondItem="iiF-eU-4hg" secondAttribute="bottom" constant="37" id="twY-Fg-Nfw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="f3R-ON-IqH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="qFn-v1-RRr"/>
+                                <exclude reference="rkQ-9I-XKd"/>
+                                <exclude reference="twY-Fg-Nfw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="f3R-ON-IqH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="qFn-v1-RRr"/>
+                                <include reference="rkQ-9I-XKd"/>
+                                <include reference="twY-Fg-Nfw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adicionar espécie" id="alT-uB-qoX">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="68i-xf-Vtb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Hia-DY-dJZ">
+                            <connections>
+                                <action selector="btnDone:" destination="892-uw-JWs" id="DkY-dy-Oug"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tfFamilia" destination="fUH-dI-x8f" id="pqD-X1-I1W"/>
+                        <outlet property="tfFormaVida" destination="8t0-F2-pST" id="nit-zN-NQY"/>
+                        <outlet property="tfNomeAutor" destination="lhQ-iJ-Oq3" id="SWp-KY-dOC"/>
+                        <outlet property="tfNomeEspecie" destination="v1C-Ec-yid" id="zgn-GB-Blu"/>
+                        <outlet property="tfNomePopular" destination="U6T-EZ-Mfe" id="PFw-IT-3bm"/>
+                        <outlet property="tfNomePopular2" destination="FLN-QM-gaQ" id="0DN-28-rhd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEh-jg-qy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2493" y="1597.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iyH-Pg-Erk">
@@ -285,4 +460,8 @@
             <point key="canvasLocation" x="239" y="965"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DXh-K9-DTt"/>
+        <segue reference="Dv1-pp-CxL"/>
+    </inferredMetricsTieBreakers>
 </document>
