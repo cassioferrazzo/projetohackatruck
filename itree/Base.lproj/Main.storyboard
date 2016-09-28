@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,52 +19,134 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Forma de Vida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZGk-Er-VXP">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="12" y="39" width="311" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oiP-1q-cwZ">
+                                <rect key="frame" x="20" y="358" width="560" height="244"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="678-xs-ieR">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="184"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-Yn-8Cs">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="40"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Forma de vida" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aoa-00-Eqd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="512" height="40"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olR-sn-yjk">
+                                                        <rect key="frame" x="520" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="l5R-xI-bs0"/>
+                                                            <constraint firstAttribute="height" constant="40" id="pvp-oA-pbn"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Lupa"/>
+                                                        <connections>
+                                                            <segue destination="trc-Rj-BbL" kind="show" identifier="segueSelectFormaDeVida" id="ia9-N6-csZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t8R-Ux-xTd">
+                                                <rect key="frame" x="0.0" y="48" width="560" height="40"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Família" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t01-qV-x7n">
+                                                        <rect key="frame" x="0.0" y="0.0" width="512" height="40"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoz-1J-1js">
+                                                        <rect key="frame" x="520" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="C2R-hv-N6H"/>
+                                                            <constraint firstAttribute="height" constant="40" id="YlE-bo-PLW"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <segue destination="QPi-e3-lVb" kind="show" identifier="segueSelectFamilia" id="z1z-uy-EFf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="paa-pj-285">
+                                                <rect key="frame" x="0.0" y="96" width="560" height="40"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Espécie" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lLI-kP-w5D">
+                                                        <rect key="frame" x="0.0" y="0.0" width="512" height="40"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iV-i8-l0d">
+                                                        <rect key="frame" x="520" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="6vj-yu-K6C"/>
+                                                            <constraint firstAttribute="width" constant="40" id="aIf-Ni-hfH"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <segue destination="MKx-Jf-ehq" kind="show" identifier="segueSelectEspecie" id="bAg-R3-S8E"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome popular" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-M6-DBx">
+                                                <rect key="frame" x="0.0" y="144" width="560" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5F-AX-fqP">
+                                        <rect key="frame" x="0.0" y="214" width="560" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Gua-Z4-7eJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Buscar">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Gua-Z4-7eJ"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Gua-Z4-7eJ"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="678-xs-ieR" firstAttribute="top" secondItem="oiP-1q-cwZ" secondAttribute="top" id="76l-Wn-SNe"/>
+                                    <constraint firstAttribute="trailing" secondItem="678-xs-ieR" secondAttribute="trailing" id="79n-lk-hMr"/>
+                                    <constraint firstItem="678-xs-ieR" firstAttribute="leading" secondItem="oiP-1q-cwZ" secondAttribute="leading" id="HS5-a9-oXb"/>
+                                    <constraint firstAttribute="trailing" secondItem="g5F-AX-fqP" secondAttribute="trailing" id="OYt-FF-nTH"/>
+                                    <constraint firstItem="g5F-AX-fqP" firstAttribute="leading" secondItem="oiP-1q-cwZ" secondAttribute="leading" id="Rl2-vO-og3"/>
+                                    <constraint firstItem="g5F-AX-fqP" firstAttribute="top" secondItem="678-xs-ieR" secondAttribute="bottom" constant="8" id="WTQ-KK-jQc"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WTQ-KK-jQc"/>
+                                    </mask>
                                 </variation>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Familia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F8h-C1-5ip">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="12" y="120" width="311" height="30"/>
-                                </variation>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EML-9l-tHm">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Salvar"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="77" width="43" height="30"/>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2I-c1-v5M">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Salvar"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="22" y="165" width="43" height="30"/>
-                                </variation>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oiP-1q-cwZ" secondAttribute="bottom" constant="8" id="18a-dM-god"/>
+                            <constraint firstItem="oiP-1q-cwZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="G1x-Tu-Cmu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oiP-1q-cwZ" secondAttribute="trailing" id="egw-5c-lkb"/>
+                            <constraint firstItem="oiP-1q-cwZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="xkU-mP-Rrk"/>
+                        </constraints>
                         <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="ZGk-Er-VXP"/>
-                                <exclude reference="F8h-C1-5ip"/>
-                                <exclude reference="EML-9l-tHm"/>
-                                <exclude reference="p2I-c1-v5M"/>
+                            <mask key="constraints">
+                                <exclude reference="xkU-mP-Rrk"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="ZGk-Er-VXP"/>
-                                <include reference="F8h-C1-5ip"/>
-                                <include reference="EML-9l-tHm"/>
-                                <include reference="p2I-c1-v5M"/>
+                            <mask key="constraints">
+                                <include reference="xkU-mP-Rrk"/>
+                                <exclude reference="18a-dM-god"/>
                             </mask>
                         </variation>
                     </view>
@@ -83,7 +166,300 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244.5" y="309"/>
+            <point key="canvasLocation" x="1057" y="305"/>
+        </scene>
+        <!--Selecione uma Forma de vida-->
+        <scene sceneID="sGe-sC-fqT">
+            <objects>
+                <tableViewController id="trc-Rj-BbL" customClass="SelectFormaDeVidaTableViewController" customModule="itree" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ECA-Ka-CrL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Oko-sk-4ys">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="formaDeVidaCell" id="z87-D3-Kyl">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z87-D3-Kyl" id="MuN-rx-eoo">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="trc-Rj-BbL" id="nVe-2O-8Fv"/>
+                            <outlet property="delegate" destination="trc-Rj-BbL" id="IYC-rf-hie"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Selecione uma Forma de vida" id="YnX-9v-WZU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F0h-0y-kIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="304.5"/>
+        </scene>
+        <!--Adicionar-->
+        <scene sceneID="0zK-g6-xur">
+            <objects>
+                <viewController id="Ej6-5t-Ifc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wi3-il-0Mf"/>
+                        <viewControllerLayoutGuide type="bottom" id="f5O-Tl-wPZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g1T-nA-oZg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adicionar" id="9ka-EV-msL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kLy-KJ-Ejy"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Te3-P0-Dci"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wfe-3c-7Ic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2584.5" y="304.5"/>
+        </scene>
+        <!--Selecione uma família-->
+        <scene sceneID="SG9-eg-T8q">
+            <objects>
+                <tableViewController id="QPi-e3-lVb" customClass="SelectFamiliaTableViewController" customModule="itree" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GYq-6h-jfK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="I29-hN-jaY">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="X6o-vB-ipg">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X6o-vB-ipg" id="xf2-YZ-v6g">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QPi-e3-lVb" id="lBO-hG-hOG"/>
+                            <outlet property="delegate" destination="QPi-e3-lVb" id="eaj-Hw-96C"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Selecione uma família" id="xel-zV-K3O"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aP-1T-dsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="937.5"/>
+        </scene>
+        <!--Selecione uma espécie-->
+        <scene sceneID="swf-PT-A9a">
+            <objects>
+                <tableViewController id="MKx-Jf-ehq" customClass="SelectEspecieTableViewController" customModule="itree" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hlL-rO-ypd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="5kp-uS-1fq">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QoM-EU-bxH">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QoM-EU-bxH" id="ZeJ-7h-5zO">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MKx-Jf-ehq" id="4Jl-l4-33B"/>
+                            <outlet property="delegate" destination="MKx-Jf-ehq" id="qrC-wA-Mcf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Selecione uma espécie" id="DNF-Vf-mC4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5Ry-6d-aaW">
+                            <connections>
+                                <segue destination="892-uw-JWs" kind="show" identifier="segueAdicionarEspecie" id="LRe-2o-ncL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnAdicionar" destination="5Ry-6d-aaW" id="vHM-MB-iVI"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l3c-l8-0OP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815" y="1597.5"/>
+        </scene>
+        <!--Adicionar espécie-->
+        <scene sceneID="Vuq-Uq-ce2">
+            <objects>
+                <viewController id="892-uw-JWs" customClass="AddEspecieViewController" customModule="itree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iiF-eU-4hg"/>
+                        <viewControllerLayoutGuide type="bottom" id="gSZ-lO-Zpf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QcP-lT-G19">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="f3R-ON-IqH">
+                                <rect key="frame" x="0.0" y="0.0" width="560" height="144"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EWE-lv-oJR">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Forma de vida" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8t0-F2-pST">
+                                                <rect key="frame" x="0.0" y="0.0" width="522" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5f-PL-ZFm">
+                                                <rect key="frame" x="530" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="aa3-WW-AR4"/>
+                                                    <constraint firstAttribute="height" constant="40" id="vWI-25-QSK"/>
+                                                </constraints>
+                                                <state key="normal" title="Lupa"/>
+                                                <connections>
+                                                    <segue destination="trc-Rj-BbL" kind="show" identifier="segueSelectFormaVida" id="DXh-K9-DTt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Lgt-uX-1Gp">
+                                        <rect key="frame" x="0.0" y="38" width="560" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Família" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUH-dI-x8f">
+                                                <rect key="frame" x="0.0" y="0.0" width="522" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0T-8W-5c3">
+                                                <rect key="frame" x="530" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="6pi-Ym-csM"/>
+                                                    <constraint firstAttribute="height" constant="40" id="e02-xx-edP"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="QPi-e3-lVb" kind="show" identifier="segueSelectFamilia" id="Dv1-pp-CxL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome espécie" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v1C-Ec-yid">
+                                        <rect key="frame" x="0.0" y="0.0" width="522" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome autor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhQ-iJ-Oq3">
+                                        <rect key="frame" x="0.0" y="0.0" width="522" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome popular" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U6T-EZ-Mfe">
+                                        <rect key="frame" x="0.0" y="114" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome popular secundário" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLN-QM-gaQ">
+                                        <rect key="frame" x="0.0" y="114" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="v1C-Ec-yid"/>
+                                        <exclude reference="lhQ-iJ-Oq3"/>
+                                        <exclude reference="FLN-QM-gaQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="v1C-Ec-yid"/>
+                                        <include reference="lhQ-iJ-Oq3"/>
+                                        <include reference="FLN-QM-gaQ"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="f3R-ON-IqH" secondAttribute="trailing" id="qFn-v1-RRr"/>
+                            <constraint firstItem="f3R-ON-IqH" firstAttribute="leading" secondItem="QcP-lT-G19" secondAttribute="leadingMargin" id="rkQ-9I-XKd"/>
+                            <constraint firstItem="f3R-ON-IqH" firstAttribute="top" secondItem="iiF-eU-4hg" secondAttribute="bottom" constant="37" id="twY-Fg-Nfw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="f3R-ON-IqH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="qFn-v1-RRr"/>
+                                <exclude reference="rkQ-9I-XKd"/>
+                                <exclude reference="twY-Fg-Nfw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="f3R-ON-IqH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="qFn-v1-RRr"/>
+                                <include reference="rkQ-9I-XKd"/>
+                                <include reference="twY-Fg-Nfw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adicionar espécie" id="alT-uB-qoX">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="68i-xf-Vtb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Hia-DY-dJZ">
+                            <connections>
+                                <action selector="btnDone:" destination="892-uw-JWs" id="DkY-dy-Oug"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tfFamilia" destination="fUH-dI-x8f" id="pqD-X1-I1W"/>
+                        <outlet property="tfFormaVida" destination="8t0-F2-pST" id="nit-zN-NQY"/>
+                        <outlet property="tfNomeAutor" destination="lhQ-iJ-Oq3" id="SWp-KY-dOC"/>
+                        <outlet property="tfNomeEspecie" destination="v1C-Ec-yid" id="zgn-GB-Blu"/>
+                        <outlet property="tfNomePopular" destination="U6T-EZ-Mfe" id="PFw-IT-3bm"/>
+                        <outlet property="tfNomePopular2" destination="FLN-QM-gaQ" id="0DN-28-rhd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEh-jg-qy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2493" y="1597.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iyH-Pg-Erk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VUe-Bu-bdo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="asL-5w-EXu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GW1-Eu-vV2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4p7-uT-XhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="965"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

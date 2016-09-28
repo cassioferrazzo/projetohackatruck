@@ -13,6 +13,9 @@
 		3F3F12F11D99A7160060A291 /* itree.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F12EF1D99A7160060A291 /* itree.xcdatamodeld */; };
 		3F3F12F31D99A7160060A291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3F12F21D99A7160060A291 /* Assets.xcassets */; };
 		3F3F12F61D99A7160060A291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3F12F41D99A7160060A291 /* LaunchScreen.storyboard */; };
+		3F4244351D9AF6B700EB4B67 /* SelectFormaDeVidaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4244341D9AF6B700EB4B67 /* SelectFormaDeVidaTableViewController.swift */; };
+		3F4244371D9AFC9900EB4B67 /* SelectFamiliaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4244361D9AFC9900EB4B67 /* SelectFamiliaTableViewController.swift */; };
+		3F4244391D9AFCA800EB4B67 /* SelecEspecieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4244381D9AFCA800EB4B67 /* SelecEspecieTableViewController.swift */; };
 		3F4F64F41D9AFB5B0090AF9A /* Foto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64E81D9AFB5B0090AF9A /* Foto+CoreDataProperties.swift */; };
 		3F4F64F51D9AFB5B0090AF9A /* Foto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64E91D9AFB5B0090AF9A /* Foto.swift */; };
 		3F4F64F61D9AFB5B0090AF9A /* Localizacao+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64EA1D9AFB5B0090AF9A /* Localizacao+CoreDataProperties.swift */; };
@@ -26,6 +29,7 @@
 		3F4F64FE1D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64F21D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift */; };
 		3F4F64FF1D9AFB5B0090AF9A /* FormaVida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F64F31D9AFB5B0090AF9A /* FormaVida.swift */; };
 		3F4F65011D9AFFE80090AF9A /* FormaVidaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F65001D9AFFE80090AF9A /* FormaVidaDAO.swift */; };
+		3F78B7361D9C408D008D0283 /* AddEspecieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78B7351D9C408D008D0283 /* AddEspecieViewController.swift */; };
 		3FB374B31D9C30F3005D73C7 /* FamiliaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB374B21D9C30F3005D73C7 /* FamiliaDAO.swift */; };
 		3FB374B51D9C3359005D73C7 /* EspecieDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB374B41D9C3359005D73C7 /* EspecieDAO.swift */; };
 		3FB374B71D9C3433005D73C7 /* LocalizacaoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB374B61D9C3433005D73C7 /* LocalizacaoDAO.swift */; };
@@ -42,6 +46,9 @@
 		3F3F12F21D99A7160060A291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F3F12F51D99A7160060A291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3F12F71D99A7160060A291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4244341D9AF6B700EB4B67 /* SelectFormaDeVidaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectFormaDeVidaTableViewController.swift; sourceTree = "<group>"; };
+		3F4244361D9AFC9900EB4B67 /* SelectFamiliaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectFamiliaTableViewController.swift; sourceTree = "<group>"; };
+		3F4244381D9AFCA800EB4B67 /* SelecEspecieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelecEspecieTableViewController.swift; sourceTree = "<group>"; };
 		3F4F64E81D9AFB5B0090AF9A /* Foto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foto+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F4F64E91D9AFB5B0090AF9A /* Foto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foto.swift; sourceTree = "<group>"; };
 		3F4F64EA1D9AFB5B0090AF9A /* Localizacao+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Localizacao+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -55,6 +62,7 @@
 		3F4F64F21D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FormaVida+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F4F64F31D9AFB5B0090AF9A /* FormaVida.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormaVida.swift; sourceTree = "<group>"; };
 		3F4F65001D9AFFE80090AF9A /* FormaVidaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormaVidaDAO.swift; sourceTree = "<group>"; };
+		3F78B7351D9C408D008D0283 /* AddEspecieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEspecieViewController.swift; sourceTree = "<group>"; };
 		3FB374B21D9C30F3005D73C7 /* FamiliaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamiliaDAO.swift; sourceTree = "<group>"; };
 		3FB374B41D9C3359005D73C7 /* EspecieDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EspecieDAO.swift; sourceTree = "<group>"; };
 		3FB374B61D9C3433005D73C7 /* LocalizacaoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizacaoDAO.swift; sourceTree = "<group>"; };
@@ -244,6 +252,9 @@
 				3F4F64FC1D9AFB5B0090AF9A /* Familia+CoreDataProperties.swift in Sources */,
 				3F4F64F91D9AFB5B0090AF9A /* Planta.swift in Sources */,
 				3FB374B71D9C3433005D73C7 /* LocalizacaoDAO.swift in Sources */,
+				3F4244391D9AFCA800EB4B67 /* SelecEspecieTableViewController.swift in Sources */,
+				3F4244351D9AF6B700EB4B67 /* SelectFormaDeVidaTableViewController.swift in Sources */,
+				3F4244371D9AFC9900EB4B67 /* SelectFamiliaTableViewController.swift in Sources */,
 				3F3F12EB1D99A7160060A291 /* ViewController.swift in Sources */,
 				3F3F12F11D99A7160060A291 /* itree.xcdatamodeld in Sources */,
 				3F4F64F51D9AFB5B0090AF9A /* Foto.swift in Sources */,
@@ -258,6 +269,7 @@
 				3FB374BB1D9C3627005D73C7 /* PlantaDAO.swift in Sources */,
 				3F4F64F41D9AFB5B0090AF9A /* Foto+CoreDataProperties.swift in Sources */,
 				3F4F64FE1D9AFB5B0090AF9A /* FormaVida+CoreDataProperties.swift in Sources */,
+				3F78B7361D9C408D008D0283 /* AddEspecieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
