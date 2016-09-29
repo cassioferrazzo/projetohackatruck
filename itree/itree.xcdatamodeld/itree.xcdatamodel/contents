@@ -5,34 +5,38 @@
         <attribute name="nomeAutor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nomePopular1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nomePopular2" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="especieFamilia" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Familia" inverseName="familiaEspecie" inverseEntity="Familia" syncable="YES"/>
-        <relationship name="especiePlanta" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Planta" inverseName="plantaEspecie" inverseEntity="Planta" syncable="YES"/>
+        <relationship name="familia" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Familia" inverseName="especies" inverseEntity="Familia" syncable="YES"/>
+        <relationship name="planta" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Planta" inverseName="especie" inverseEntity="Planta" syncable="YES"/>
     </entity>
     <entity name="Familia" representedClassName=".Familia" syncable="YES">
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="familiaEspecie" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Especie" inverseName="especieFamilia" inverseEntity="Especie" syncable="YES"/>
-        <relationship name="familiaFormaVida" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FormaVida" inverseName="formaVidaFamilia" inverseEntity="FormaVida" syncable="YES"/>
+        <relationship name="especies" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Especie" inverseName="familia" inverseEntity="Especie" syncable="YES"/>
+        <relationship name="formaVida" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FormaVida" inverseName="familias" inverseEntity="FormaVida" syncable="YES"/>
     </entity>
     <entity name="FormaVida" representedClassName=".FormaVida" syncable="YES">
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="formaVidaFamilia" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Familia" inverseName="familiaFormaVida" inverseEntity="Familia" syncable="YES"/>
+        <relationship name="familias" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Familia" inverseName="formaVida" inverseEntity="Familia" syncable="YES"/>
     </entity>
     <entity name="Foto" representedClassName=".Foto" syncable="YES">
         <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="fotoLocalizacao" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Localizacao" inverseName="localizacaoFoto" inverseEntity="Localizacao" syncable="YES"/>
-        <relationship name="fotoPlanta" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Planta" inverseName="plantaFoto" inverseEntity="Planta" syncable="YES"/>
+        <relationship name="localizacao" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Localizacao" inverseName="foto" inverseEntity="Localizacao" syncable="YES"/>
+        <relationship name="planta" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Planta" inverseName="fotos" inverseEntity="Planta" syncable="YES"/>
     </entity>
     <entity name="Localizacao" representedClassName=".Localizacao" syncable="YES">
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <relationship name="localizacaoFoto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Foto" inverseName="fotoLocalizacao" inverseEntity="Foto" syncable="YES"/>
+        <relationship name="foto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Foto" inverseName="localizacao" inverseEntity="Foto" syncable="YES"/>
     </entity>
     <entity name="Planta" representedClassName=".Planta" syncable="YES">
         <attribute name="observacao" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="plantaEspecie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Especie" inverseName="especiePlanta" inverseEntity="Especie" syncable="YES"/>
-        <relationship name="plantaFoto" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Foto" inverseName="fotoPlanta" inverseEntity="Foto" syncable="YES"/>
+        <relationship name="especie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Especie" inverseName="planta" inverseEntity="Especie" syncable="YES"/>
+        <relationship name="fotos" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Foto" inverseName="planta" inverseEntity="Foto" syncable="YES"/>
+    </entity>
+    <entity name="Versao" representedClassName=".Versao" syncable="YES">
+        <attribute name="dadosInseridos" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="versao" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
     </entity>
     <elements>
         <element name="Especie" positionX="-360" positionY="63" width="128" height="133"/>
@@ -41,5 +45,6 @@
         <element name="Foto" positionX="-585" positionY="234" width="128" height="103"/>
         <element name="Localizacao" positionX="-648" positionY="9" width="128" height="88"/>
         <element name="Planta" positionX="-351" positionY="264" width="128" height="88"/>
+        <element name="Versao" positionX="-468" positionY="90" width="128" height="43"/>
     </elements>
 </model>

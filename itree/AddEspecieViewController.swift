@@ -44,7 +44,6 @@ class AddEspecieViewController: UIViewController {
     
     
     @IBAction func btnDone(sender: UIBarButtonItem) {
-        print("grter")
         
         self.navigationController?.popViewControllerAnimated(true)
     }

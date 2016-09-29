@@ -2,7 +2,7 @@
 //  Especie+CoreDataProperties.swift
 //  itree
 //
-//  Created by Student on 9/27/16.
+//  Created by Student on 9/29/16.
 //  Copyright © 2016 biotruck. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -18,7 +18,7 @@ extension Especie {
     @NSManaged var nomeAutor: String?
     @NSManaged var nomePopular1: String?
     @NSManaged var nomePopular2: String?
-    @NSManaged var especieFamilia: Familia?
-    @NSManaged var especiePlanta: Planta?
+    @NSManaged var familia: Familia?
+    @NSManaged var planta: Planta?
 
 }

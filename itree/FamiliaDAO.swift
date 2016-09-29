@@ -12,6 +12,39 @@ import UIKit
 
 class FamiliaDAO {
     
+    static func initData (){
+        
+        let versao: Versao = VersaoDAO.ultimaVersao()
+        if(versao.dadosInseridos == false) {
+            
+            let formaVida = FormaVida(descricao: "Descrição de arvore", nome: "Arvore")
+            FormaVidaDAO.inserir(formaVida)
+            let formaVida2 = FormaVida(descricao: "Descrição de arbusto", nome: "Arbusto")
+            FormaVidaDAO.inserir(formaVida2)
+            let formaVida3 = FormaVida(descricao: "Descrição de erva", nome: "Erva")
+            FormaVidaDAO.inserir(formaVida3)
+            
+            let familia1 = Familia(nome: "Adoxaceae", formaVida: formaVida)
+            FamiliaDAO.inserir(familia1)
+            let familia2 = Familia(nome: "Anacardiaceae", formaVida: formaVida)
+            FamiliaDAO.inserir(familia2)
+            
+            let familia3 = Familia(nome: "Asteraceae", formaVida: formaVida2)
+            FamiliaDAO.inserir(familia3)
+            let familia5 = Familia(nome: "Cannabaceae", formaVida: formaVida2)
+            FamiliaDAO.inserir(familia5)
+            
+            let familia4 = Familia(nome: "Balsaminaceae", formaVida: formaVida3)
+            FamiliaDAO.inserir(familia4)
+            let familia6 = Familia(nome: "Begoniaceae", formaVida: formaVida3)
+            FamiliaDAO.inserir(familia6)
+            
+            
+            VersaoDAO.inserir(Versao(versao: 1.0, dadosInseridos: true))
+            
+        }
+    }
+    
     static func inserir(familia: Familia){
         let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         context.insertObject(familia)

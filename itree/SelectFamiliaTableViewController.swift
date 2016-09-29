@@ -10,12 +10,21 @@ import UIKit
 
 class SelectFamiliaTableViewController: UITableViewController {
 
+    var listaFamilia: [Familia] = []
     var formaDeVida: FormaVida?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.hideKeyboardWhenTappedAround() 
-
+        self.hideKeyboardWhenTappedAround()
+        /*
+        if let forma = formaDeVida{
+           print(forma.nome)
+        }else{
+           listaFamilia = FamiliaDAO.buscarTudo()
+        }
+        */
+        listaFamilia = FamiliaDAO.buscarTudo()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -23,32 +32,32 @@ class SelectFamiliaTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        print("SelectFamilia: \(listaFamilia.count)")
+        return listaFamilia.count
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellFamilia", forIndexPath: indexPath) as! FamiliaTableViewCell
+        
+        cell.lbFamilia.text = self.listaFamilia[indexPath.row].nome
+        cell.lbFormaDeVida.text = cell.lbFormaDeVida.text! + " " +  (self.listaFamilia[indexPath.row].formaVida?.nome)!
 
         return cell
     }
-    */
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        ViewController.familia = listaFamilia[indexPath.row]
+        self.navigationController?.popViewControllerAnimated(true)
+    }
 
     /*
     // Override to support conditional editing of the table view.

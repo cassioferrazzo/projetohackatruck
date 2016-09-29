@@ -2,7 +2,7 @@
 //  Localizacao+CoreDataProperties.swift
 //  itree
 //
-//  Created by Student on 9/27/16.
+//  Created by Student on 9/29/16.
 //  Copyright © 2016 biotruck. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -16,6 +16,6 @@ extension Localizacao {
 
     @NSManaged var latitude: NSNumber?
     @NSManaged var longitude: NSNumber?
-    @NSManaged var localizacaoFoto: Foto?
+    @NSManaged var foto: Foto?
 
 }

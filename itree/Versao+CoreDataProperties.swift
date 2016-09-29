@@ -1,5 +1,5 @@
 //
-//  Foto+CoreDataProperties.swift
+//  Versao+CoreDataProperties.swift
 //  itree
 //
 //  Created by Student on 9/29/16.
@@ -12,11 +12,9 @@
 import Foundation
 import CoreData
 
-extension Foto {
+extension Versao {
 
-    @NSManaged var data: NSDate?
-    @NSManaged var nome: String?
-    @NSManaged var localizacao: Localizacao?
-    @NSManaged var planta: Planta?
+    @NSManaged var versao: NSNumber?
+    @NSManaged var dadosInseridos: NSNumber?
 
 }

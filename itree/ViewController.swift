@@ -45,15 +45,15 @@ class ViewController: UIViewController {
         
         if segue.identifier! == "segueSelectFamilia" {
             if let nextSegue = segue.destinationViewController as? SelectFamiliaTableViewController {
-                if let formaVida = tfFormaDeVida.text {
-                    nextSegue.formaDeVida = FormaVida(nome: formaVida , descricao: "")
+                if let formaVida = ViewController.formaDeVida {
+                        nextSegue.formaDeVida = formaVida
                 }
             }
             
         } else if segue.identifier! == "segueSelectEspecie"{
             if let nextSegue = segue.destinationViewController as? SelectEspecieTableViewController {
-                if let familia = tfFamilia.text {
-                    nextSegue.familia = Familia(nome: familia, formaVida:  FormaVida(nome: familia , descricao: ""))
+                if let familia = ViewController.familia{
+                    nextSegue.familia = familia
                 }
             }
         }

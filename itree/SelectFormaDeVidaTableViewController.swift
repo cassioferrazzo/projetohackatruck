@@ -10,9 +10,13 @@ import UIKit
 
 class SelectFormaDeVidaTableViewController: UITableViewController {
 
+    var listaFormaVida: [FormaVida] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.listaFormaVida = FormaVidaDAO.buscarTudo()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,17 +38,19 @@ class SelectFormaDeVidaTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return self.listaFormaVida.count
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        ViewController.formaDeVida = FormaVida(nome: "DEMONIO", descricao: "")
+    
+        ViewController.formaDeVida = listaFormaVida[indexPath.row]
         self.navigationController?.popViewControllerAnimated(true)
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("formaDeVidaCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("formaDeVidaCell", forIndexPath: indexPath) as! FormaVidaTableViewCell
+        cell.lbFormaVida.text = self.listaFormaVida[indexPath.row].nome
 
         // Configure the cell...
 
